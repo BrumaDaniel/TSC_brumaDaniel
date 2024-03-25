@@ -1,0 +1,133 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2
+vinstr_register
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 DXx4 work 18 instr_register_pkg 0 22 4ddzFkn?=Q5d6mT;bc9CQ1
+!s110 1711349808
+!i10b 1
+!s100 oR3nOk=d_FOCcmo^hdA3Y1
+IjB^<MQmlQaAoQ>k]oYkbH2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 instr_register_sv_unit
+S1
+R0
+w1711348974
+8C:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab_dut/instr_register.sv
+FC:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab_dut/instr_register.sv
+L0 9
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1711349808.000000
+!s107 C:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab_dut/instr_register.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab_dut/instr_register.sv|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+Xinstr_register_pkg
+R1
+!s110 1711349806
+!i10b 1
+!s100 UMzP4UfAK3Eafb0Xd1OhB2
+I4ddzFkn?=Q5d6mT;bc9CQ1
+V4ddzFkn?=Q5d6mT;bc9CQ1
+S1
+R0
+w1710737865
+8C:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab_dut/instr_register_pkg.sv
+FC:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab_dut/instr_register_pkg.sv
+L0 5
+R4
+r1
+!s85 0
+31
+!s108 1711349806.000000
+!s107 C:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab_dut/instr_register_pkg.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab_dut/instr_register_pkg.sv|
+!i113 1
+R5
+R6
+vinstr_register_test
+R1
+R2
+!s110 1711351672
+!i10b 1
+!s100 ZQ8zRGOT1<Cd>;f:S6DIV3
+IVf1h=Z1o`b8oV6_H7gDUB2
+R3
+!s105 instr_register_test_sv_unit
+S1
+R0
+w1711351654
+8C:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab01_testbench-interface/instr_register_test.sv
+FC:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab01_testbench-interface/instr_register_test.sv
+L0 7
+R4
+r1
+!s85 0
+31
+!s108 1711351672.000000
+!s107 C:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab01_testbench-interface/instr_register_test.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab01_testbench-interface/instr_register_test.sv|
+!i113 1
+R5
+R6
+Ytb_ifc
+R1
+R2
+!s110 1710745563
+!i10b 1
+!s100 9W>AVcHhBXii<Bfl@Xo5O2
+II<lSKYBKON2OJ3mJBI=@Z0
+R3
+!s105 tb_ifc_sv_unit
+S1
+R0
+w1709533244
+8C:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab01_testbench-interface/tb_ifc.sv
+FC:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab01_testbench-interface/tb_ifc.sv
+L0 5
+R4
+r1
+!s85 0
+31
+!s108 1710745563.000000
+!s107 C:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab01_testbench-interface/tb_ifc.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab01_testbench-interface/tb_ifc.sv|
+!i113 1
+R5
+R6
+vtop
+R1
+R2
+!s110 1711351673
+!i10b 1
+!s100 mk_e=]DfDUNDX@BSSg98z1
+I4gGM0[6XZ`5>aAWlXD9T;2
+R3
+!s105 top_sv_unit
+S1
+R0
+w1710741724
+8C:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab01_testbench-interface/top.sv
+FC:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab01_testbench-interface/top.sv
+L0 5
+R4
+r1
+!s85 0
+31
+!s108 1711351673.000000
+!s107 C:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab01_testbench-interface/top.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/Grasu/OneDrive/Desktop/TSC_lab/lab2/lab2/lab01_testbench-interface/top.sv|
+!i113 1
+R5
+R6
