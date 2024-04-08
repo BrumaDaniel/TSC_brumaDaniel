@@ -1,0 +1,245 @@
+# 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:23:23 on Apr 08,2024
+# vlog -sv -timescale 1ps/1ps -work work -f sources.txt 
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling module instr_register_test
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 09:23:23 on Apr 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -quiet -nocoverage "+notimingchecks" "+nowarnTSCALE" -sva top -GWR_ORDER=1 -GRD_ORDER=1 -GRD_NR=10 -GWD_NR=10 
+# Start time: 09:23:23 on Apr 08,2024
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# Reseting the instruction register...
+# 
+# Writing values to register stack...
+# 
+# LOADD_EN 1 timp                   35
+# Writing to register location 8: 
+#   opcode = 1 (PASSA)
+#   operand_a = -12
+#   operand_b = 7
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                   45
+# Writing to register location 7: 
+#   opcode = 0 (ZERO)
+#   operand_a = -9
+#   operand_b = 1
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                   55
+# Writing to register location 21: 
+#   opcode = 7 (MOD)
+#   operand_a = -15
+#   operand_b = 8
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                   65
+# Writing to register location 3: 
+#   opcode = 5 (MULT)
+#   operand_a = -8
+#   operand_b = 7
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                   75
+# Writing to register location 28: 
+#   opcode = 3 (ADD)
+#   operand_a = -9
+#   operand_b = 5
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                   85
+# Writing to register location 3: 
+#   opcode = 4 (SUB)
+#   operand_a = 5
+#   operand_b = 3
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                   95
+# Writing to register location 30: 
+#   opcode = 3 (ADD)
+#   operand_a = 3
+#   operand_b = 12
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  105
+# Writing to register location 25: 
+#   opcode = 6 (DIV)
+#   operand_a = 12
+#   operand_b = 3
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  115
+# Writing to register location 9: 
+#   opcode = 1 (PASSA)
+#   operand_a = 3
+#   operand_b = 14
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  125
+# Writing to register location 7: 
+#   opcode = 1 (PASSA)
+#   operand_a = -2
+#   operand_b = 9
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  135
+# 
+# Reading back the same register locations written...
+# 
+# Read from register location 19: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 19
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 5: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 5
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 31: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 31
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 0: 
+#   opcode = x ()
+#   operand_a = x
+#   operand_b = x
+#   instruction_word_rez= x
+# 
+# SUCCESS: No mismatch at read pointer 0
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: x
+# Read from register location 14: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 14
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 20: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 20
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 19: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 19
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 8: 
+#   opcode = 1 (PASSA)
+#   operand_a = -12
+#   operand_b = 7
+#   instruction_word_rez= -12
+# 
+# SUCCESS: No mismatch at read pointer 8
+#   Opcode: 1 (PASSA)
+#   Operand A: -12
+#   Operand B: 7
+#   Result: -12
+# Read from register location 28: 
+#   opcode = 3 (ADD)
+#   operand_a = -9
+#   operand_b = 5
+#   instruction_word_rez= -4
+# 
+# SUCCESS: No mismatch at read pointer 28
+#   Opcode: 3 (ADD)
+#   Operand A: -9
+#   Operand B: 5
+#   Result: -4
+# Read from register location 1: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 1
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Tests that passed 10: 
+# Tests that failed 0: 
+# 
+# ***********************************************************
+# ***  THIS IS A SELF-CHECKING TESTBENCH.  YOU DONT       ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# ** Note: $finish    : ../lab01_testbench-interface/instr_register_test.sv(84)
+#    Time: 246 ns  Iteration: 1  Instance: /top/test
+# End time: 09:23:23 on Apr 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

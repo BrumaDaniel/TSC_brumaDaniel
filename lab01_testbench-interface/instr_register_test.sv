@@ -23,6 +23,7 @@ module instr_register_test
   parameter RD_NR = 7;
   parameter WR_ORDER = 2;
   parameter RD_ORDER = 2;
+  parameter TEST_NAME;
   int seed = 555; 
   int passed_tests = 0;
   int failed_tests = 0;
@@ -179,8 +180,8 @@ module instr_register_test
   function void final_report;
     $display("Tests that passed %0d: ", passed_tests);
     $display("Tests that failed %0d: ", failed_tests);
+    fopen "..report/tegression_re.....txt"
+    //aici scriem numele testului si spunem daca este pass sau fail si ceilalti parametrii
   endfunction: final_report
 
 endmodule: instr_register_test
-//Tema o functie check results in fn de readpointer sa stie care este op a b opcode si sa calc expected resoult si sa compare a b opcode si rezultatul cu iw_regresult(ce am primit de la dut).
-//
