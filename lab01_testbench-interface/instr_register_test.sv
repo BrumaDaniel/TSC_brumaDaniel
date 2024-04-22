@@ -22,9 +22,10 @@ module instr_register_test
   parameter WD_NR = 7;
   parameter RD_NR = 7;
   parameter WR_ORDER = 2;
-  parameter RD_ORDER = 2;
-  parameter TEST_NAME;
-  int seed = 555; 
+  parameter RD_ORDER = 2; 
+  parameter TEST_NAME = "DEC_DEC";
+  parameter SEED_VAL = 555;
+  int seed = SEED_VAL; 
   int passed_tests = 0;
   int failed_tests = 0;
   instruction_t  iw_reg_test [0:31];  // an array of instruction_word structures 32 de elemente [31:0] 32 de biti
@@ -99,9 +100,9 @@ module instr_register_test
     operand_b     <= $unsigned($random)%16;            // between 0 and 15
     opcode        <= opcode_t'($unsigned($random)%8);  // between 0 and 7, cast to opcode_t type
     case (WR_ORDER)
-      0 : write_pointer <= temp++;
-      1 : write_pointer <= $unsigned($random)%32;
-      2 : write_pointer <= temp_decremental--;
+      0 : write_pointer = temp++;
+      1 : write_pointer = $unsigned($random)%32;
+      2 : write_pointer = temp_decremental--;
     endcase
     //write_pointer <= temp++; //toate valoriel alea trebuie sa sa le punem intre-un iv reg 
     //iw_reg[write_pointer]. aici trebuie sa stockez toate valorile generate
@@ -116,12 +117,20 @@ module instr_register_test
       ADD  : iw_reg_test[read_pointer].rez_t = iw_reg_test[read_pointer].op_a + iw_reg_test[read_pointer].op_b;
       SUB  : iw_reg_test[read_pointer].rez_t = iw_reg_test[read_pointer].op_a - iw_reg_test[read_pointer].op_b;
       MULT : iw_reg_test[read_pointer].rez_t = iw_reg_test[read_pointer].op_a * iw_reg_test[read_pointer].op_b;
-      DIV  : iw_reg_test[read_pointer].rez_t = iw_reg_test[read_pointer].op_a / iw_reg_test[read_pointer].op_b;
-      MOD  : iw_reg_test[read_pointer].rez_t = iw_reg_test[read_pointer].op_a % iw_reg_test[read_pointer].op_b;
+      DIV  : if (iw_reg_test[read_pointer].op_b <= 0)
+                  iw_reg_test[read_pointer].rez_t = 0;
+              else
+                iw_reg_test[read_pointer].rez_t = iw_reg_test[read_pointer].op_a / iw_reg_test[read_pointer].op_b;
+      MOD  : if (iw_reg_test[read_pointer].op_b <= 0)
+                  iw_reg_test[read_pointer].rez_t = 0;
+              else
+                iw_reg_test[read_pointer].rez_t = iw_reg_test[read_pointer].op_a % iw_reg_test[read_pointer].op_b;
     endcase
 
-    if(instruction_word.rez_t!= iw_reg_test[read_pointer].rez_t) begin
-    $display("ERROR: Mismatch detected at read pointer %0d", read_pointer);
+    //afiseaza datele care vin din DUT nu de aici
+    if(instruction_word.rez_t !== iw_reg_test[read_pointer].rez_t) begin
+    //$display("Semnul de bit al operand_a: %0b, si valoarea lui est: %1d", iw_reg_test[read_pointer].op_a[31], iw_reg_test[read_pointer].op_a);
+    $display("ERROR: Mismatch detected at read pointer %0d, at time %1t", read_pointer, $time);
     $display("  Opcode: %0d (%s)", iw_reg_test[read_pointer].opc, iw_reg_test[read_pointer].opc.name);
     $display("  Operand A: %0d", iw_reg_test[read_pointer].op_a);
     $display("  Operand B: %0d", iw_reg_test[read_pointer].op_b);
@@ -136,16 +145,16 @@ module instr_register_test
     $display("  Result: %0d", instruction_word.rez_t);
     passed_tests++;
     end
-    if(instruction_word.rez_t != iw_reg_test[read_pointer].rez_t )begin
+    if(instruction_word.rez_t !== iw_reg_test[read_pointer].rez_t )begin
     $display("ERROR: Rezultat incorect");
     end
-    if(instruction_word.op_a != iw_reg_test[read_pointer].op_a )begin
+    if(instruction_word.op_a !== iw_reg_test[read_pointer].op_a )begin
     $display("ERROR: OPERAND_A incorect");
     end 
-    if(instruction_word.op_b != iw_reg_test[read_pointer].op_b )begin
+    if(instruction_word.op_b !== iw_reg_test[read_pointer].op_b )begin
     $display("ERROR: OPERAND_B incorect");
     end
-    if(instruction_word.opc != iw_reg_test[read_pointer].opc )begin
+    if(instruction_word.opc !== iw_reg_test[read_pointer].opc )begin
     $display("ERROR: OPCODE INCORECT");
     end 
   endfunction: check_result
@@ -178,10 +187,27 @@ module instr_register_test
   endfunction: print_results
 
   function void final_report;
-    $display("Tests that passed %0d: ", passed_tests);
-    $display("Tests that failed %0d: ", failed_tests);
-    fopen "..report/tegression_re.....txt"
+    int    fd      ;
+    string filename;
+
+    $display("Tests that passed :%0d ", passed_tests);
+    $display("Tests that failed :%0d ", failed_tests);
+
+    //Form the string for the file name
+    filename = $sformatf("../reports/regression_transcript/final_report");
+
+    //Open the file in write mode
+    fd = $fopen(filename, "a");
+
+    if(failed_tests != 0)
+      $fdisplay(fd, "Test: %s has FAILED.", TEST_NAME);
+    else
+      $fdisplay(fd, "Test: %s has PASSED.", TEST_NAME);
+
+    $fclose(fd);
+    //fopen "..report/tegression_re.....txt"
     //aici scriem numele testului si spunem daca este pass sau fail si ceilalti parametrii
   endfunction: final_report
+  
 
 endmodule: instr_register_test

@@ -1,6 +1,6 @@
 # 1
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 09:23:25 on Apr 08,2024
+# Start time: 08:14:13 on Apr 15,2024
 # vlog -sv -timescale 1ps/1ps -work work -f sources.txt 
 # -- Compiling package instr_register_pkg
 # -- Compiling module instr_register
@@ -10,10 +10,10 @@
 # 
 # Top level modules:
 # 	top
-# End time: 09:23:25 on Apr 08,2024, Elapsed time: 0:00:00
+# End time: 08:14:13 on Apr 15,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -quiet -nocoverage "+notimingchecks" "+nowarnTSCALE" -sva top -GWR_ORDER=2 -GRD_ORDER=1 -GRD_NR=10 -GWD_NR=10 
-# Start time: 09:23:25 on Apr 08,2024
+# vsim -novopt -quiet -nocoverage "+notimingchecks" "+nowarnTSCALE" -sva top -GTEST_NAME=DEC_RAND -GWR_ORDER=2 -GRD_ORDER=1 -GRD_NR=10 -GWD_NR=10 
+# Start time: 08:14:13 on Apr 15,2024
 # 
 # 
 # ***********************************************************
@@ -230,8 +230,8 @@
 #   Operand A: -8
 #   Operand B: 7
 #   Result: -56
-# Tests that passed 10: 
-# Tests that failed 0: 
+# Tests that passed :10 
+# Tests that failed :0 
 # 
 # ***********************************************************
 # ***  THIS IS A SELF-CHECKING TESTBENCH.  YOU DONT       ***
@@ -239,7 +239,7 @@
 # ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
 # ***********************************************************
 # 
-# ** Note: $finish    : ../lab01_testbench-interface/instr_register_test.sv(84)
+# ** Note: $finish    : ../lab01_testbench-interface/instr_register_test.sv(85)
 #    Time: 246 ns  Iteration: 1  Instance: /top/test
-# End time: 09:23:25 on Apr 08,2024, Elapsed time: 0:00:00
+# End time: 08:14:14 on Apr 15,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

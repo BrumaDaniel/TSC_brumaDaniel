@@ -29,7 +29,7 @@ import instr_register_pkg::*;  // user-defined types are defined in instr_regist
       foreach (iw_reg[i])
         iw_reg[i] = '{opc:ZERO,default:0};  // reset to all zeros cum se initializeaza o structura ' zice indiferent de nr de biti 
     end
-    else if (load_en) begin //punem case daca opcode este add ce facem? adaugam in structura o variabila noua REZ TEMA de implementam toate operatiile
+    else if (load_en && !$isunknown(operand_a)) begin //punem case daca opcode este add ce facem? adaugam in structura o variabila noua REZ TEMA de implementam toate operatiile
       $display("LOADD_EN %d timp %t", load_en ,$time  );
       case (opcode)
         ZERO  : result = 0;
@@ -38,8 +38,14 @@ import instr_register_pkg::*;  // user-defined types are defined in instr_regist
         ADD   : result = operand_a + operand_b;
         SUB   : result = operand_a - operand_b;
         MULT  : result = operand_a * operand_b;
-        DIV   : result = operand_a / operand_b;
-        MOD   : result = operand_a % operand_b;
+        DIV   : if (operand_b <= 0)
+                  result = 0;
+                else
+                  result = operand_a / operand_b;
+        MOD   : if (operand_b <= 0)
+                  result = 0;
+                else
+                  result = operand_a % operand_b;
         //default : result = 0;
       endcase
       iw_reg[write_pointer] = '{opcode,operand_a,operand_b,result}; // cum se intampla truncherea?? 

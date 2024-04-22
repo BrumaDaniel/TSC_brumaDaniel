@@ -1,0 +1,1044 @@
+# 1
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:13:46 on Apr 21,2024
+# vlog -sv -timescale 1ps/1ps -work work -f sources.txt 
+# -- Compiling package instr_register_pkg
+# -- Compiling module instr_register
+# -- Importing package instr_register_pkg
+# -- Compiling module instr_register_test
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 16:13:47 on Apr 21,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -novopt -quiet -nocoverage "+notimingchecks" "+nowarnTSCALE" -sva top -GTEST_NAME=RAND_RAND_TEST12 -GWR_ORDER=1 -GRD_ORDER=1 -GRD_NR=50 -GWD_NR=50 -GSEED_VAL=45646756873 
+# Start time: 16:13:47 on Apr 21,2024
+# 
+# 
+# ***********************************************************
+# ***  THIS IS NOT A SELF-CHECKING TESTBENCH (YET).  YOU  ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# Reseting the instruction register...
+# 
+# Writing values to register stack...
+# 
+# Writing to register location 6: 
+#   opcode = 1 (PASSA)
+#   operand_a = 9
+#   operand_b = 11
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                   45
+# Writing to register location 20: 
+#   opcode = 6 (DIV)
+#   operand_a = 11
+#   operand_b = 1
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                   55
+# Writing to register location 31: 
+#   opcode = 4 (SUB)
+#   operand_a = -15
+#   operand_b = 6
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                   65
+# Writing to register location 30: 
+#   opcode = 7 (MOD)
+#   operand_a = -10
+#   operand_b = 4
+#   instruction_word_rez= -21
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                   75
+# Writing to register location 3: 
+#   opcode = 6 (DIV)
+#   operand_a = 4
+#   operand_b = 15
+#   instruction_word_rez= -21
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                   85
+# Writing to register location 31: 
+#   opcode = 3 (ADD)
+#   operand_a = 15
+#   operand_b = 14
+#   instruction_word_rez= -21
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                   95
+# Writing to register location 30: 
+#   opcode = 7 (MOD)
+#   operand_a = -2
+#   operand_b = 3
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  105
+# Writing to register location 13: 
+#   opcode = 6 (DIV)
+#   operand_a = 3
+#   operand_b = 15
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  115
+# Writing to register location 27: 
+#   opcode = 5 (MULT)
+#   operand_a = -1
+#   operand_b = 14
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  125
+# Writing to register location 18: 
+#   opcode = 3 (ADD)
+#   operand_a = -2
+#   operand_b = 13
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  135
+# Writing to register location 10: 
+#   opcode = 2 (PASSB)
+#   operand_a = -3
+#   operand_b = 11
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  145
+# Writing to register location 1: 
+#   opcode = 2 (PASSB)
+#   operand_a = 11
+#   operand_b = 2
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  155
+# Writing to register location 28: 
+#   opcode = 1 (PASSA)
+#   operand_a = 2
+#   operand_b = 10
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  165
+# Writing to register location 27: 
+#   opcode = 4 (SUB)
+#   operand_a = 10
+#   operand_b = 1
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  175
+# Writing to register location 28: 
+#   opcode = 3 (ADD)
+#   operand_a = 1
+#   operand_b = 12
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  185
+# Writing to register location 13: 
+#   opcode = 4 (SUB)
+#   operand_a = 12
+#   operand_b = 11
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  195
+# Writing to register location 0: 
+#   opcode = 5 (MULT)
+#   operand_a = -5
+#   operand_b = 12
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  205
+# Writing to register location 4: 
+#   opcode = 0 (ZERO)
+#   operand_a = -4
+#   operand_b = 13
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  215
+# Writing to register location 28: 
+#   opcode = 4 (SUB)
+#   operand_a = 13
+#   operand_b = 0
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  225
+# Writing to register location 20: 
+#   opcode = 4 (SUB)
+#   operand_a = 0
+#   operand_b = 4
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  235
+# Writing to register location 14: 
+#   opcode = 4 (SUB)
+#   operand_a = -12
+#   operand_b = 12
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  245
+# Writing to register location 13: 
+#   opcode = 6 (DIV)
+#   operand_a = 12
+#   operand_b = 4
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  255
+# Writing to register location 16: 
+#   opcode = 5 (MULT)
+#   operand_a = -12
+#   operand_b = 14
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  265
+# Writing to register location 16: 
+#   opcode = 0 (ZERO)
+#   operand_a = 14
+#   operand_b = 13
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  275
+# Writing to register location 3: 
+#   opcode = 0 (ZERO)
+#   operand_a = -3
+#   operand_b = 0
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  285
+# Writing to register location 31: 
+#   opcode = 3 (ADD)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 29
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  295
+# Writing to register location 14: 
+#   opcode = 7 (MOD)
+#   operand_a = 0
+#   operand_b = 3
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  305
+# Writing to register location 23: 
+#   opcode = 6 (DIV)
+#   operand_a = -13
+#   operand_b = 15
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  315
+# Writing to register location 5: 
+#   opcode = 7 (MOD)
+#   operand_a = -1
+#   operand_b = 14
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  325
+# Writing to register location 13: 
+#   opcode = 5 (MULT)
+#   operand_a = 14
+#   operand_b = 7
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  335
+# Writing to register location 2: 
+#   opcode = 5 (MULT)
+#   operand_a = 7
+#   operand_b = 5
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  345
+# Writing to register location 4: 
+#   opcode = 2 (PASSB)
+#   operand_a = 5
+#   operand_b = 13
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  355
+# Writing to register location 22: 
+#   opcode = 4 (SUB)
+#   operand_a = 13
+#   operand_b = 2
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  365
+# Writing to register location 6: 
+#   opcode = 6 (DIV)
+#   operand_a = -14
+#   operand_b = 4
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  375
+# Writing to register location 29: 
+#   opcode = 6 (DIV)
+#   operand_a = -12
+#   operand_b = 6
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  385
+# Writing to register location 13: 
+#   opcode = 5 (MULT)
+#   operand_a = 6
+#   operand_b = 6
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  395
+# Writing to register location 2: 
+#   opcode = 5 (MULT)
+#   operand_a = -10
+#   operand_b = 13
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  405
+# Writing to register location 28: 
+#   opcode = 2 (PASSB)
+#   operand_a = 13
+#   operand_b = 13
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  415
+# Writing to register location 6: 
+#   opcode = 4 (SUB)
+#   operand_a = 13
+#   operand_b = 2
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  425
+# Writing to register location 16: 
+#   opcode = 6 (DIV)
+#   operand_a = -14
+#   operand_b = 12
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  435
+# Writing to register location 17: 
+#   opcode = 0 (ZERO)
+#   operand_a = -4
+#   operand_b = 6
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  445
+# Writing to register location 25: 
+#   opcode = 1 (PASSA)
+#   operand_a = -10
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  455
+# Writing to register location 8: 
+#   opcode = 1 (PASSA)
+#   operand_a = 0
+#   operand_b = 1
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  465
+# Writing to register location 31: 
+#   opcode = 0 (ZERO)
+#   operand_a = 1
+#   operand_b = 9
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  475
+# Writing to register location 16: 
+#   opcode = 7 (MOD)
+#   operand_a = -7
+#   operand_b = 8
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  485
+# Writing to register location 9: 
+#   opcode = 0 (ZERO)
+#   operand_a = 8
+#   operand_b = 15
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  495
+# Writing to register location 25: 
+#   opcode = 1 (PASSA)
+#   operand_a = 15
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  505
+# Writing to register location 14: 
+#   opcode = 1 (PASSA)
+#   operand_a = 0
+#   operand_b = 9
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  515
+# Writing to register location 13: 
+#   opcode = 6 (DIV)
+#   operand_a = 9
+#   operand_b = 9
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  525
+# Writing to register location 12: 
+#   opcode = 5 (MULT)
+#   operand_a = 9
+#   operand_b = 14
+#   instruction_word_rez= 0
+# 
+# DATA SAVED
+# 
+# LOADD_EN 1 timp                  535
+# 
+# Reading back the same register locations written...
+# 
+# Read from register location 0: 
+#   opcode = 5 (MULT)
+#   operand_a = -5
+#   operand_b = 12
+#   instruction_word_rez= -60
+# 
+# SUCCESS: No mismatch at read pointer 0
+#   Opcode: 5 (MULT)
+#   Operand A: -5
+#   Operand B: 12
+#   Result: -60
+# Read from register location 16: 
+#   opcode = 7 (MOD)
+#   operand_a = -7
+#   operand_b = 8
+#   instruction_word_rez= -7
+# 
+# SUCCESS: No mismatch at read pointer 16
+#   Opcode: 7 (MOD)
+#   Operand A: -7
+#   Operand B: 8
+#   Result: -7
+# Read from register location 15: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 15
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 15: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 15
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 14: 
+#   opcode = 1 (PASSA)
+#   operand_a = 0
+#   operand_b = 9
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 14
+#   Opcode: 1 (PASSA)
+#   Operand A: 0
+#   Operand B: 9
+#   Result: 0
+# Read from register location 9: 
+#   opcode = 0 (ZERO)
+#   operand_a = 8
+#   operand_b = 15
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 9
+#   Opcode: 0 (ZERO)
+#   Operand A: 8
+#   Operand B: 15
+#   Result: 0
+# Read from register location 3: 
+#   opcode = 0 (ZERO)
+#   operand_a = -3
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 3
+#   Opcode: 0 (ZERO)
+#   Operand A: -3
+#   Operand B: 0
+#   Result: 0
+# Read from register location 22: 
+#   opcode = 4 (SUB)
+#   operand_a = 13
+#   operand_b = 2
+#   instruction_word_rez= 11
+# 
+# SUCCESS: No mismatch at read pointer 22
+#   Opcode: 4 (SUB)
+#   Operand A: 13
+#   Operand B: 2
+#   Result: 11
+# Read from register location 4: 
+#   opcode = 2 (PASSB)
+#   operand_a = 5
+#   operand_b = 13
+#   instruction_word_rez= 13
+# 
+# SUCCESS: No mismatch at read pointer 4
+#   Opcode: 2 (PASSB)
+#   Operand A: 5
+#   Operand B: 13
+#   Result: 13
+# Read from register location 1: 
+#   opcode = 2 (PASSB)
+#   operand_a = 11
+#   operand_b = 2
+#   instruction_word_rez= 2
+# 
+# SUCCESS: No mismatch at read pointer 1
+#   Opcode: 2 (PASSB)
+#   Operand A: 11
+#   Operand B: 2
+#   Result: 2
+# Read from register location 4: 
+#   opcode = 2 (PASSB)
+#   operand_a = 5
+#   operand_b = 13
+#   instruction_word_rez= 13
+# 
+# SUCCESS: No mismatch at read pointer 4
+#   Opcode: 2 (PASSB)
+#   Operand A: 5
+#   Operand B: 13
+#   Result: 13
+# Read from register location 0: 
+#   opcode = 5 (MULT)
+#   operand_a = -5
+#   operand_b = 12
+#   instruction_word_rez= -60
+# 
+# SUCCESS: No mismatch at read pointer 0
+#   Opcode: 5 (MULT)
+#   Operand A: -5
+#   Operand B: 12
+#   Result: -60
+# Read from register location 21: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 21
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 22: 
+#   opcode = 4 (SUB)
+#   operand_a = 13
+#   operand_b = 2
+#   instruction_word_rez= 11
+# 
+# SUCCESS: No mismatch at read pointer 22
+#   Opcode: 4 (SUB)
+#   Operand A: 13
+#   Operand B: 2
+#   Result: 11
+# Read from register location 15: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 15
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 9: 
+#   opcode = 0 (ZERO)
+#   operand_a = 8
+#   operand_b = 15
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 9
+#   Opcode: 0 (ZERO)
+#   Operand A: 8
+#   Operand B: 15
+#   Result: 0
+# Read from register location 20: 
+#   opcode = 4 (SUB)
+#   operand_a = 0
+#   operand_b = 4
+#   instruction_word_rez= -4
+# 
+# SUCCESS: No mismatch at read pointer 20
+#   Opcode: 4 (SUB)
+#   Operand A: 0
+#   Operand B: 4
+#   Result: -4
+# Read from register location 2: 
+#   opcode = 5 (MULT)
+#   operand_a = -10
+#   operand_b = 13
+#   instruction_word_rez= -130
+# 
+# SUCCESS: No mismatch at read pointer 2
+#   Opcode: 5 (MULT)
+#   Operand A: -10
+#   Operand B: 13
+#   Result: -130
+# Read from register location 7: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 7
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 0: 
+#   opcode = 5 (MULT)
+#   operand_a = -5
+#   operand_b = 12
+#   instruction_word_rez= -60
+# 
+# SUCCESS: No mismatch at read pointer 0
+#   Opcode: 5 (MULT)
+#   Operand A: -5
+#   Operand B: 12
+#   Result: -60
+# Read from register location 0: 
+#   opcode = 5 (MULT)
+#   operand_a = -5
+#   operand_b = 12
+#   instruction_word_rez= -60
+# 
+# SUCCESS: No mismatch at read pointer 0
+#   Opcode: 5 (MULT)
+#   Operand A: -5
+#   Operand B: 12
+#   Result: -60
+# Read from register location 15: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 15
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 11: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 11
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 31: 
+#   opcode = 0 (ZERO)
+#   operand_a = 1
+#   operand_b = 9
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 31
+#   Opcode: 0 (ZERO)
+#   Operand A: 1
+#   Operand B: 9
+#   Result: 0
+# Read from register location 14: 
+#   opcode = 1 (PASSA)
+#   operand_a = 0
+#   operand_b = 9
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 14
+#   Opcode: 1 (PASSA)
+#   Operand A: 0
+#   Operand B: 9
+#   Result: 0
+# Read from register location 22: 
+#   opcode = 4 (SUB)
+#   operand_a = 13
+#   operand_b = 2
+#   instruction_word_rez= 11
+# 
+# SUCCESS: No mismatch at read pointer 22
+#   Opcode: 4 (SUB)
+#   Operand A: 13
+#   Operand B: 2
+#   Result: 11
+# Read from register location 20: 
+#   opcode = 4 (SUB)
+#   operand_a = 0
+#   operand_b = 4
+#   instruction_word_rez= -4
+# 
+# SUCCESS: No mismatch at read pointer 20
+#   Opcode: 4 (SUB)
+#   Operand A: 0
+#   Operand B: 4
+#   Result: -4
+# Read from register location 14: 
+#   opcode = 1 (PASSA)
+#   operand_a = 0
+#   operand_b = 9
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 14
+#   Opcode: 1 (PASSA)
+#   Operand A: 0
+#   Operand B: 9
+#   Result: 0
+# Read from register location 10: 
+#   opcode = 2 (PASSB)
+#   operand_a = -3
+#   operand_b = 11
+#   instruction_word_rez= 11
+# 
+# SUCCESS: No mismatch at read pointer 10
+#   Opcode: 2 (PASSB)
+#   Operand A: -3
+#   Operand B: 11
+#   Result: 11
+# Read from register location 15: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 15
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 16: 
+#   opcode = 7 (MOD)
+#   operand_a = -7
+#   operand_b = 8
+#   instruction_word_rez= -7
+# 
+# SUCCESS: No mismatch at read pointer 16
+#   Opcode: 7 (MOD)
+#   Operand A: -7
+#   Operand B: 8
+#   Result: -7
+# Read from register location 19: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 19
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 30: 
+#   opcode = 7 (MOD)
+#   operand_a = -2
+#   operand_b = 3
+#   instruction_word_rez= -2
+# 
+# SUCCESS: No mismatch at read pointer 30
+#   Opcode: 7 (MOD)
+#   Operand A: -2
+#   Operand B: 3
+#   Result: -2
+# Read from register location 4: 
+#   opcode = 2 (PASSB)
+#   operand_a = 5
+#   operand_b = 13
+#   instruction_word_rez= 13
+# 
+# SUCCESS: No mismatch at read pointer 4
+#   Opcode: 2 (PASSB)
+#   Operand A: 5
+#   Operand B: 13
+#   Result: 13
+# Read from register location 24: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 24
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 3: 
+#   opcode = 0 (ZERO)
+#   operand_a = -3
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 3
+#   Opcode: 0 (ZERO)
+#   Operand A: -3
+#   Operand B: 0
+#   Result: 0
+# Read from register location 0: 
+#   opcode = 5 (MULT)
+#   operand_a = -5
+#   operand_b = 12
+#   instruction_word_rez= -60
+# 
+# SUCCESS: No mismatch at read pointer 0
+#   Opcode: 5 (MULT)
+#   Operand A: -5
+#   Operand B: 12
+#   Result: -60
+# Read from register location 11: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 11
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 20: 
+#   opcode = 4 (SUB)
+#   operand_a = 0
+#   operand_b = 4
+#   instruction_word_rez= -4
+# 
+# SUCCESS: No mismatch at read pointer 20
+#   Opcode: 4 (SUB)
+#   Operand A: 0
+#   Operand B: 4
+#   Result: -4
+# Read from register location 14: 
+#   opcode = 1 (PASSA)
+#   operand_a = 0
+#   operand_b = 9
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 14
+#   Opcode: 1 (PASSA)
+#   Operand A: 0
+#   Operand B: 9
+#   Result: 0
+# Read from register location 25: 
+#   opcode = 1 (PASSA)
+#   operand_a = 15
+#   operand_b = 0
+#   instruction_word_rez= 15
+# 
+# SUCCESS: No mismatch at read pointer 25
+#   Opcode: 1 (PASSA)
+#   Operand A: 15
+#   Operand B: 0
+#   Result: 15
+# Read from register location 1: 
+#   opcode = 2 (PASSB)
+#   operand_a = 11
+#   operand_b = 2
+#   instruction_word_rez= 2
+# 
+# SUCCESS: No mismatch at read pointer 1
+#   Opcode: 2 (PASSB)
+#   Operand A: 11
+#   Operand B: 2
+#   Result: 2
+# Read from register location 3: 
+#   opcode = 0 (ZERO)
+#   operand_a = -3
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 3
+#   Opcode: 0 (ZERO)
+#   Operand A: -3
+#   Operand B: 0
+#   Result: 0
+# Read from register location 24: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 24
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 5: 
+#   opcode = 7 (MOD)
+#   operand_a = -1
+#   operand_b = 14
+#   instruction_word_rez= -1
+# 
+# SUCCESS: No mismatch at read pointer 5
+#   Opcode: 7 (MOD)
+#   Operand A: -1
+#   Operand B: 14
+#   Result: -1
+# Read from register location 15: 
+#   opcode = 0 (ZERO)
+#   operand_a = 0
+#   operand_b = 0
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 15
+#   Opcode: 0 (ZERO)
+#   Operand A: 0
+#   Operand B: 0
+#   Result: 0
+# Read from register location 10: 
+#   opcode = 2 (PASSB)
+#   operand_a = -3
+#   operand_b = 11
+#   instruction_word_rez= 11
+# 
+# SUCCESS: No mismatch at read pointer 10
+#   Opcode: 2 (PASSB)
+#   Operand A: -3
+#   Operand B: 11
+#   Result: 11
+# Read from register location 0: 
+#   opcode = 5 (MULT)
+#   operand_a = -5
+#   operand_b = 12
+#   instruction_word_rez= -60
+# 
+# SUCCESS: No mismatch at read pointer 0
+#   Opcode: 5 (MULT)
+#   Operand A: -5
+#   Operand B: 12
+#   Result: -60
+# Read from register location 20: 
+#   opcode = 4 (SUB)
+#   operand_a = 0
+#   operand_b = 4
+#   instruction_word_rez= -4
+# 
+# SUCCESS: No mismatch at read pointer 20
+#   Opcode: 4 (SUB)
+#   Operand A: 0
+#   Operand B: 4
+#   Result: -4
+# Read from register location 23: 
+#   opcode = 6 (DIV)
+#   operand_a = -13
+#   operand_b = 15
+#   instruction_word_rez= 0
+# 
+# SUCCESS: No mismatch at read pointer 23
+#   Opcode: 6 (DIV)
+#   Operand A: -13
+#   Operand B: 15
+#   Result: 0
+# Tests that passed :50 
+# Tests that failed :0 
+# 
+# ***********************************************************
+# ***  THIS IS A SELF-CHECKING TESTBENCH.  YOU DONT       ***
+# ***  NEED TO VISUALLY VERIFY THAT THE OUTPUT VALUES     ***
+# ***  MATCH THE INPUT VALUES FOR EACH REGISTER LOCATION  ***
+# ***********************************************************
+# 
+# ** Note: $finish    : ../lab01_testbench-interface/instr_register_test.sv(86)
+#    Time: 1046 ns  Iteration: 1  Instance: /top/test
+# End time: 16:13:47 on Apr 21,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
